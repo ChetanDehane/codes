@@ -1,1 +1,1 @@
-# please give a star if code works for u
+# please give a star if codes works for u
