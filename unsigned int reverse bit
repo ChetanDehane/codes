@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+unsigned int reversebits(unsigned int num)
+{
+    unsigned int counter = sizeof(num)*8-1;
+    unsigned int reversenum=num;
+
+    num>>=1;
+    while(num)
+    {
+        reversenum<<=1;
+        reversenum|=num&1;
+        num>>=1;
+        counter--;
+    }
+    reversenum<<=counter;
+    return reversenum;
+}
+
+int main()
+{
+    unsigned int n;
+    while(cin>>n)
+    {
+        cout<<reversebits(n)<<endl;
+    }
+    return 0;
+}
