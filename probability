@@ -21,6 +21,6 @@ int main()
 {
 	int N,R;
 	cin>>N>>R;
-	cout << setprecision(6)<<fixed<<count_heads(N, R);
+	cout <<fixed<<setprecision(6)<<count_heads(N, R);
 	return 0;
 }
